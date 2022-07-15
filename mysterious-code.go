@@ -14,14 +14,14 @@ func main() {
     var firstHalf string = ""
     var secondHalf string = ""
 	for left <= right {
-        if (left == right) {
-            firstHalf += string(stringSecret[right])
-            break
-        }
-        firstHalf += string(stringSecret[right])
-        secondHalf = string(stringSecret[left]) + secondHalf
-        left++
-        right--
+            if (left == right) {
+                firstHalf += string(stringSecret[right])
+                break
+            }
+	    firstHalf += string(stringSecret[right])
+	    secondHalf = string(stringSecret[left]) + secondHalf
+	    left++
+	    right--
 	}
     fmt.Println(firstHalf + secondHalf)
 }
